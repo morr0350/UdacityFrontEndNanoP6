@@ -69,7 +69,7 @@ $(function() {
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
          */
-        var entries;
+        var $entries;
 
         beforeEach(function (done) {
             loadFeed(0, done);
@@ -77,7 +77,7 @@ $(function() {
 
         /* Tests there is at least some article content after feed loads */
         it ('should contain entries in feed container after load', function () {
-            var $entries = $('.feed .entry');
+            $entries = $('.feed .entry');
             expect($entries.length).toBeGreaterThan(0);
         });
     });
