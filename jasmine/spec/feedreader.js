@@ -75,6 +75,7 @@ $(function() {
             expect(body.className).not.toBe('menu-hidden');
         });
     });
+
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function () {
         /* TODO: Write a test that ensures when the loadFeed
@@ -96,6 +97,7 @@ $(function() {
             expect(entries.length).toBeGreaterThan(0);
         }, 2000);
     });
+
     /* TODO: Write a new test suite named "New Feed Selection"*/
     describe('New Feed Selection', function () {
         /* TODO: Write a test that ensures when a new feed is loaded
@@ -115,11 +117,9 @@ $(function() {
                     done();
                 });
             });
-
         });
 
         it('should change content when loadfeed() loads a new feed', function() {
-
             articles1.toArray().forEach(function (article1) {
                 content1.push(article1.innerText);
             });
@@ -127,6 +127,7 @@ $(function() {
             articles2.toArray().forEach(function (article2) {
                 content2.push(article2.innerText);
             });
+
             expect(content1).not.toEqual(content2);
         });
 
