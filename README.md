@@ -1,13 +1,13 @@
 # Udacity Front-End Web Developer Nanodegree - Project 6
 
-Tony Morrow
-December 14, 2015
+######Tony Morrow
+######December 14, 2015
 
-Instructions:
+####Instructions:
 1. Open index.html in your browser and allow the Jasmine test runner to go through its tests.
 
 ###'RSS Feeds' Suite:
-1.
+1. Ensures allFeeds variable is defined and contains data.
 2. Loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty.
 3. Loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty.
 
